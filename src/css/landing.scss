@@ -1,0 +1,65 @@
+.landing {
+	height: 100vh;
+	width: 100vw;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0;
+	.row > * {
+		padding: 0;
+		margin: 0;
+	}
+
+	&__row {
+		height: 100vh;
+		&-left {
+			background-color: #128ad4;
+			opacity: 0.7;
+			color: #fff;
+			.logo {
+				height: 40vh;
+			}
+			.header {
+				.hero {
+				}
+				.intro {
+					font-weight: bold;
+					font-size: 50px;
+					line-height: 55px;
+				}
+			}
+		}
+		&-right {
+			background-color: #fff;
+			a,
+			a:visited,
+			a:hover {
+				text-decoration: none;
+			}
+			.right__row {
+				height: 50vh;
+				.icon svg {
+					height: 100px;
+					width: 100px;
+					font-weight: normal;
+				}
+				.purpose {
+					font-size: 50px;
+					font-weight: bold;
+					line-height: 55px;
+				}
+				.intro {
+					font-size: 20px;
+				}
+			}
+			.top {
+				background-color: #0199f6;
+				color: #fff;
+			}
+			.bottom {
+				background-color: #fff;
+				color: #0199f6;
+			}
+		}
+	}
+}

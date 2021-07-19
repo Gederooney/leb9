@@ -1,0 +1,50 @@
+.main {
+	background: #fff;
+	height: 100vh;
+
+	.content {
+		margin-top: 20px;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		.card {
+			height: 200px;
+			margin: 10px;
+			cursor: pointer;
+		}
+	}
+	#sidebar-wrapper {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		z-index: 100;
+		background-color: #fff;
+		visibility: hidden;
+		.header {
+			padding: 30px;
+			background-color: #0199f6;
+			color: #fff;
+			div {
+				span {
+					img {
+						width: 80px;
+						height: 80px;
+					}
+				}
+			}
+		}
+		.body {
+			padding: 0 30px;
+			.employee__row {
+				padding: 15px 0;
+				cursor: pointer;
+			}
+			.employee__row:not(:last-child) {
+				border-bottom: 1px solid lightgray;
+			}
+		}
+	}
+	#sidebar-wrapper.active {
+		visibility: visible;
+	}
+}
